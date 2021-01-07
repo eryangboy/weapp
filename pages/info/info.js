@@ -11,7 +11,6 @@ import {
   store
 } from './store'
 
-
 Page({
 
   /**
