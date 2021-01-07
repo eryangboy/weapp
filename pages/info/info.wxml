@@ -1,0 +1,14 @@
+<!--pages/info/info.wxml-->
+<import src="../common/head.wxml" />
+
+<view class="info-wrap">
+  <wxs src="../../utils/string.wxs" module="tools" />
+  <template is="head" data="{{title: '这是一个公共模板'}}" />
+  <text class="info-name"> 姓名：{{name}}</text>
+  <text class="info-number"> wxs语法：{{tools.my_slice("123456789",0,5)}}</text>
+  <mp-dialog title="确定跳回首页吗？" show="{{dialogShow}}" bindbuttontap="tapDialogButton" mask-closable="{{false}}"
+    buttons="{{[{text: '取消',type:'cancel'}, {text: '确定',type:'confirm'}]}}">
+  </mp-dialog>
+  <text bindtap="update" style="margin-bottom:10px;display:block">调用store方法：{{storeNum}}</text>
+  <button class="info-btn" type="primary" bindtap="handleback">跳回首页</button>
+</view>

@@ -1,0 +1,9 @@
+<!--logs.wxml-->
+
+<view class="container log-list" >
+<!--自定义模版，引入公共模块-->
+  <text wx:for="{{logs}}" wx:key="index" wx:for-item="log" class="logs-item">
+    <text class="log-item" bindtap='handleChange'>{{index + 1}}. {{log}}</text>
+    <text bind:tap='handleclick'> {{userInfo.nickName}}</text>
+  </text>
+</view>

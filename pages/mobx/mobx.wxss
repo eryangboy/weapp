@@ -1,0 +1,14 @@
+/* pages/mobx/mobx.wxss */
+.mobx-page-text {
+  display: block;
+  margin: 20px;
+  margin-bottom: 100px;
+  color: #CC6666;
+  text-align: center;
+}
+
+button {
+  margin-top: 10px;
+  background-color: #CC6666 !important;
+  cursor: pointer;
+}

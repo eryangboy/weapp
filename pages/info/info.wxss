@@ -1,0 +1,18 @@
+.info-wrap {
+  margin: 20px;
+  font-size: 14px;
+}
+
+.info-wrap .info-name {
+  display: block;
+  margin: 20px 0;
+}
+
+.info-wrap .info-number {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.info-wrap .info-btn {
+  background-color: #CC6666 !important;
+}

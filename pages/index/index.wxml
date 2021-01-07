@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <!-- <text class="user-motto">{{motto}}</text> -->
+    <my-component title='这是自定义组件' bind:myevent='onMyEvent'></my-component>
+    <button type="primary" bindtap="gotoLogs" class="user-btn">跳转至info页面</button>
+    <button type="primary" bindtap="gotoMobx" class="user-btn" style="margin-top:10px">跳转至mobx页面</button>
+    <button type="primary" bindtap="gotoRedux" class="user-btn" style="margin-top:10px">跳转至redux页面</button>
+  </view>
+</view>

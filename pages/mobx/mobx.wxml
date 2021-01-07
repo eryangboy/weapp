@@ -1,0 +1,9 @@
+<!--pages/mobx/mobx.wxml-->
+<view>
+  <text class="mobx-page-text">a = {{props.store.a}}</text>
+  <view>
+    <button bindtap="incA" type='primary'>增加 a</button>
+    <button bindtap="decA" type='primary'>减少 a</button>
+    <button bindtap="double" type='primary'>加倍 a</button>
+  </view>
+</view>

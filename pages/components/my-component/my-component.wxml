@@ -1,0 +1,5 @@
+<!--pages/components/my-component/my-component.wxml-->
+<view class="my-component-wrap">
+  <text bindtap="handleClick">{{title}}：my-component</text>
+  <text>计算属性computed：{{sum}}</text>
+</view>
